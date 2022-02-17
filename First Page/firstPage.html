@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brick Breaker</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../a_images/finalufo.png"
+    />
+    <link href="firstPageStyle.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <button class="audioPlay">
+        <i class="fas fa-volume-mute"></i>
+      </button>
+      <div class="heading">SPACE MISSION</div>
+      <div class="ultimate">The Ultimate Challenge</div>
+      <div class="ufo">
+        <img src="../a_images/finalufo.png" alt="brick" />
+      </div>
+      <div class="btn">
+        <a href="../Main Page/index.html" id="startbtn">
+          <img
+            src="../a_images/Screenshot 2021-06-27 160804.png"
+            alt=""
+            class="btn"
+          />
+        </a>
+      </div>
+    </div>
+    <div class="team">By-Team TITANS</div>
+    <script>
+      var audio = new Audio("../a_sound/Music.mp3");
+      // var audio2 = new Audio("../a_sound/Startsound.mp3");
+      let playing = false;
+      document.querySelector(".audioPlay").addEventListener("click", () => {
+        if (playing) {
+          audio.pause();
+          document.querySelector("i").classList.remove("fa-volume-up");
+          document.querySelector("i").classList.add("fa-volume-mute");
+          playing = false;
+        } else {
+          audio.play();
+          playing = true;
+          document.querySelector("i").classList.remove("fa-volume-mute");
+          document.querySelector("i").classList.add("fa-volume-up");
+        }
+      });
+      // document.getElementById("startbtn").addEventListener("click", () => {
+      //   audio2.play();
+      // });
+    </script>
+  </body>
+</html>

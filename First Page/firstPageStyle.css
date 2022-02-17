@@ -1,0 +1,74 @@
+@import url("http://fonts.cdnfonts.com/css/moonlightning");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Moonlightning", sans-serif;
+  background-image: url(../a_images/astronaut-jellyfish-space-digital-art-uhdpaper.com-4K-107-wp.thumbnail.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+.container {
+  width: 500px;
+  height: 510px;
+  margin: auto;
+  margin-top: 40px;
+  padding: 20px 55px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px orange;
+}
+.heading {
+  color: orange;
+  font-size: 60px;
+  text-align: center;
+  background: none;
+  text-shadow: 0 0 5px orange;
+}
+.ultimate {
+  margin-top: 20px;
+  color: pink;
+  font-size: 30px;
+  text-align: center;
+  background: none;
+  text-shadow: 0 0 5px magenta;
+}
+.ufo {
+  background: none;
+}
+.ufo img {
+  background: none;
+  width: 180px;
+  height: 180px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.btn {
+  background: none;
+  display: block;
+  margin: auto;
+  height: 60px;
+  width: 60px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.btn:hover {
+  height: 65px;
+  width: 65px;
+}
+.team {
+  background: none;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.audioPlay {
+  margin: -40px;
+  color: white;
+  border: 0.5px solid white;
+  border-radius: 50%;
+  padding: 8px;
+}
