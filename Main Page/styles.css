@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css?family=Black+Ops+One");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("main.jpeg");
+  background-repeat: no-repeat;
+  padding: 0px;
+  background-size: cover;
+}
+
+h1 {
+  color: chartreuse;
+  box-shadow: 0 0 10px green;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2vw;
+  position: absolute;
+  top: 5px;
+  right: 42%;
+}
+
+#canvas1 {
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 10px plum;
+}
+
+@keyframes animacao1 {
+  0% {
+    background: rgba(10, 9, 9, 0.815);
+  }
+  50% {
+    background: #0d0d18;
+  }
+  100% {
+    background: #080606;
+  }
+}
+
+#tudo {
+  display: none;
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  margin: auto;
+  border-radius: 15px;
+  animation-name: animacao1;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.gameover {
+  width: 400px;
+  height: 150px;
+  /* padding-top: 50px; */
+  margin-top: 40px;
+  padding-bottom: 15px;
+  border-radius: 15px;
+}
+
+.gameover p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 50px;
+  font-family: "Black Ops One", cursive;
+  line-height: 50px;
+  text-align: center;
+  text-shadow: 5px 5px #000000;
+  color: #ffffff;
+}
+
+.continue {
+  width: 300px;
+  height: 100px;
+  padding-top: 75px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+}
+
+.continue p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: corbel;
+  color: #ffffff;
+  text-shadow: 2.5px 2.5px #000000;
+}
+
+.opcoes {
+  width: 300px;
+  height: 50px;
+  padding-top: 0px;
+  margin: auto;
+}
+
+.yes {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: corbel;
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 2.5px 2.5px #000000;
+  padding: 20px 30px 20px 30px;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  background: #006400;
+  margin-right: 80px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  float: left;
+  cursor: pointer;
+}
+
+@keyframes animacao2 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.yes:hover {
+  animation-name: animacao2;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.no {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: corbel;
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 1.5px 1.5px #fb3733;
+  padding: 20px 30px 20px 30px;
+  border-radius: 15px;
+  background: red;
+  border: #000000;
+  cursor: pointer;
+  float: left;
+}
+
+@keyframes animacao3 {
+  0% {
+    transform: translate(-5px, 0px);
+  }
+  25% {
+    transform: translate(-2.5px, 0px);
+  }
+  50% {
+    transform: translate(0px, 0px);
+  }
+  75% {
+    transform: translate(2.5px, 0px);
+  }
+  100% {
+    transform: translate(5px, 0px);
+  }
+}
+
+.no:hover {
+  animation-name: animacao3;
+  animation-duration: 0.15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+canvas:hover{
+  cursor: pointer;
+}
